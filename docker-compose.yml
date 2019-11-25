@@ -7,7 +7,7 @@ services:
   kafka:
     build: .
     ports:
-      - 9092
+      - "32781-32785:9092"
     environment:
       KAFKA_ADVERTISED_HOST_NAME: 10.20.68.131 
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
